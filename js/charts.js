@@ -3,21 +3,10 @@ function init() {
   var selector = d3.select("#selDataset");
 
   // Use the list of sample names to populate the select options
-  d3.csv("/js/culture_table.csv").then((data) => {
+  d3.csv("/Resources/culture_table.csv").then((data) => {
     var sampleNames = data;
     // console.log("csv file:", sampleNames[0]);
     sampleNames.forEach(function(d) {
-      d["2010"] = +d["2010"];
-      d["2011"] = +d["2011"];
-      d["2012"] = +d["2012"];
-      d["2013"] = +d["2013"];
-      d["2014"] = +d["2014"];
-      d["2015"] = +d["2015"];
-      d["2016"] = +d["2016"];
-      d["2017"] = +d["2017"];
-      d["2018"] = +d["2018"];
-      d["2019"] = +d["2019"];
-
     });
     // console.log("----sample names subdomain: ", sampleNames["Subdomain"])  
     sampleNames.forEach((sample) => {
@@ -63,7 +52,7 @@ function buildCharts(dataSelected) {
     // console.log('max: ', Math.max(...GDP))
 // size of the buble linked to gdp value
     size = GDP.slice(0,10).map(d => (parseFloat(d)/Math.max(...GDP)) * 50)
-    console.log(size)
+    // console.log(size)
 // prepare the trace and the layout for the plotting
     var trace = {
       x: years,
