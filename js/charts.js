@@ -3,7 +3,7 @@ function init() {
   var selector = d3.select("#selDataset");
 
   // Use the list of sample names to populate the select options
-  d3.csv("/Culture-Statistics-Strategy/js/culture_table.csv").then((data) => {
+  d3.csv("/culture_table.csv").then((data) => {
     var sampleNames = data;
     // console.log("csv file:", sampleNames[0]);
     sampleNames.forEach(function(d) {
