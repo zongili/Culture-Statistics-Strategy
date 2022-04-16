@@ -24,8 +24,8 @@ Visualization of the domains were done using functional javascript allowing user
 ![This image shows the dynamic plots created in javascript](static/images/html_page.jpg)
 
 ### Presentation Link
-You can access the presentation file in [Google Sheets](https://docs.google.com/presentation/d/1wxJ10IuTt0bPPW-jkj2_7eyEPIckpTsm/edit?usp=sharing&ouid=115735941734879015175&rtpof=true&sd=true)
-and watch the presentation Video
+You can access the presentation file in [Google Sheets](https://docs.google.com/presentation/d/1eykUAEVyZOpPEXRaDuh3WofGQ5-t2zRm/edit?usp=sharing&ouid=115735941734879015175&rtpof=true&sd=true)
+and watch the presentation [Video](https://drive.google.com/file/d/138MKXh4yEpzRTTlMdoUjbVFyI4UyR4ji/view?usp=sharing)
 
 # Summary: 
 GDP fluctuates for each subdomain and each year from 2010-2019. The result of ML analysis show that actual GDP and predicted GDP are close for the predicted output. Linear regression algorithm shows that the root mean squared error is 8.83 which is less than the 4% of the mean value of the percentages of all the GDPs. This means that the linear algorithm did a decent job but the model overfitting my dataset, the machine is memorizing the trend and not actually learning. As for the Random Forest model it is underfitting the dataset, the testing score is 0%. Dynamic visualization of subdomains were created in javascript, d3, & html. Plot is displaying Year - GDP values which shows the fluctuating revenue.
