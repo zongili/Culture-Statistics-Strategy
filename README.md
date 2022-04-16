@@ -14,14 +14,14 @@ __X : Years 	Y: GDP__
 Result of the prediction was at an __accuracy of 84%__. __Mean square error__ is extremely high, __78135108__.  The value of __root mean squared error is 8.83__, which is less than __4%__ of the mean. The value of the percentages of all the GDP's 231.9. This means that the algorithm did a decent job. As a result of linear regression I can conclude that my model overfitting my dataset, the machine is memorizing the trend and not actually learning. The model is saved as pickle file.
 __Training score: 89%       Testing score: 84%__
 
-![This image shows the plosts](images/plot_arts_writtenworks.jpg)
+![This image shows the plots](static/images/plot_arts_writtenworks.jpg)
 
  My second ML model was __Random Forest__. 
   Random Forest data gave normal results for training the data but testing data it gave __0% accuracy__ result and testing score of zero.
   This result tells me that my model underfitting my data set. It fits exactly against its training data. Random Forest algorithm can't perform accurately against unseen data, defeating its purpose.
   
 Visualization of the domains were done using functional javascript allowing user to choose a domain and see the visuals for GDP vs Years.
-![This image shows the dynamic plots created in javascript](images/html_page.jpg)
+![This image shows the dynamic plots created in javascript](static/images/html_page.jpg)
 
 ### Presentation Link
 You can access the presentation file in [Google Sheets](https://docs.google.com/presentation/d/1wxJ10IuTt0bPPW-jkj2_7eyEPIckpTsm/edit?usp=sharing&ouid=115735941734879015175&rtpof=true&sd=true)
