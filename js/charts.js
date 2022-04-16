@@ -34,7 +34,7 @@ function optionChanged(dataSelected) {
 //  Create the buildCharts function.
 function buildCharts(dataSelected) {
   //  Use d3 to load and retrieve the file 
-  d3.csv("/js/culture_table.csv").then((data) => {
+  d3.csv("culture_table.csv").then((data) => {
 
     // console.log("selected:", dataSelected)
     // record each record (header and value)
